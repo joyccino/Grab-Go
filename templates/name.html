@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+.body {
+    background-color: #f5e8da;
+}
+</style>
+  <title>name</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="font-family: 'Noto Serif KR', serif;">
+<div class= "body", id = "body">
+<center>
+<a href = "http://192.168.0.67:9843/"><img src="{{url_for('static', filename='logo.png')}}"></a>
+
+<br>
+<!-- <strong>login<strong> -->
+<br>
+<form action="/pregi" method="POST">
+  <h3>그랩앤고에 오신 것을 환영합니다!</h3>
+  <h3>고객님의 이메일 주소를 띄어쓰기 없이 입력해주세요</h3>
+  <br>
+
+  <input style="width:120pt;height:20pt;" type="email" name="email" id = "email" placeholder="example@mail.com" required />
+  <br>
+  <br>
+  <input type="submit" value="Login" style="width:100pt;height:35pt;" />
+</form>
+<br>
+<footer>
+  <br>
+  <br>
+  <div>Author: GrabNGo Team<br></div>
+  <a href="mailto:smoo4359@uni.sydney.edu.au">smoo4359@uni.sydney.edu.au</a><br>
+  <a href="mailto:erintheworld@gmail.com">erintheworld@gmail.com</a><br>
+  <a href="mailto:kmshero112@gmail.com">kmshero112@gmail.com</a><br>
+  <a href="mailto:woo.sungchun89@gmail.com">woo.sungchun89@gmail.com</a>
+  <div>Copyrightⓒ2020 GrabNGo All rights reserved.</div>
+</footer>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+</body>
+</html>

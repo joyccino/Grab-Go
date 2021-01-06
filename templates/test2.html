@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">이용 날짜</th>
+      <th scope="col">오더 ID</th>
+      <th scope="col">제품 ID for each</th>
+      <th scope="col">제품명 for each</th>
+      <th scope="col">가격 for each</th>
+      <th scope="col"> 수량 for each</th>
+      <th scope="col">총금액</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{ date }}</td>
+      <td>{{ order_id }}</td>
+      <td>{{ product_id }}</td>
+      <td>{{product_name}}</td>
+      <td>{{ cart_stock }}</td>
+      <td>{{product_name}}</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">이용 날짜</th>
+      <th scope="col">오더 ID</th>
+      <th scope="col">제품 ID for each</th>
+      <th scope="col">제품명 for each</th>
+      <th scope="col">가격 for each</th>
+      <th scope="col"> 수량 for each</th>
+      <th scope="col">총금액</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{ date }}</td>
+      <td>{{ order_id }}</td>
+      <td>{{ product_id }}</td>
+      <td>{{product_name}}</td>
+      <td>{{ cart_stock }}</td>
+      <td>{{product_name}}</td>
+      <td>{{total}}</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

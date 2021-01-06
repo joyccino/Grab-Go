@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+
+.body {
+    background-color: #f5e8da;
+
+.nav {
+  background-color: white; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+  font-size: 20px;
+  padding: 20px;
+}
+</style>
+  <title>login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="font-family: 'Noto Serif KR', serif;">
+<div class= "body", id = "body">
+<center>
+<a><img src="{{url_for('static', filename='logo.png')}}"></a>
+<br>
+<ul class="nav"> 
+  <li><a href="http://192.168.0.67:9843/home">그랩앤고 홈</a></li>
+  <li><a href="http://192.168.0.67:9843/maincart">가상 장바구니</a></li>
+  <li><a href="http://192.168.0.67:9843/mainreceipt">영수증</a></li>  
+  <li><a href="http://192.168.0.67:9843/logout">로그아웃</a></li>
+</ul>
+<br>
+<br>
+<!-- <strong>login<strong> -->
+
+<form action="/register" method="POST">
+  <h4>이름</h4>
+    <input style="width:150pt;height:30pt;"  type="text" class="form-control" id="customer_name" placeholder="name" name="customer_name" required/>
+<h4>이메일 주소</h4>
+
+<h4 style="color:red;">{{ email }}</h4>
+                      <h4>비밀번호</h4>
+                    <input style="width:150pt;height:30pt;"  type="password" class="form-control" id="customer_pass" placeholder="비밀번호" name="customer_pass" required/>
+  <h4>비밀번호 재입력</h4>
+                    <input style="width:150pt;height:30pt;"  type="password" class="form-control" id="repass" placeholder="비밀번호확인" name="repass" required/>
+  <br>
+  <input type="submit" value="회원가입 완료" style="width:100pt;height:35pt;" />
+</form>
+
+<br>
+<footer>
+  <br>
+  <br>
+  <div>Author: GrabNGo Team<br></div>
+  <a href="mailto:smoo4359@uni.sydney.edu.au">smoo4359@uni.sydney.edu.au</a><br>
+  <a href="mailto:erintheworld@gmail.com">erintheworld@gmail.com</a><br>
+  <a href="mailto:kmshero112@gmail.com">kmshero112@gmail.com</a><br>
+  <a href="mailto:woo.sungchun89@gmail.com">woo.sungchun89@gmail.com</a>
+  <div>Copyrightⓒ2020 GrabNGo All rights reserved.</div>
+</footer>
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+</body>
+</html>
